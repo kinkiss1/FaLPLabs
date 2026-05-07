@@ -1,0 +1,42 @@
+<Window x:Class="LetterGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Генератор писем DOCX"
+        Height="520"
+        Width="560"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="20">
+        <TextBlock Text="Автоматическая генерация писем DOCX"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Margin="0,0,0,20" />
+
+        <TextBlock Text="Должность адресата:" />
+        <TextBox x:Name="RecipientPostTextBox" Margin="0,4,0,12" />
+
+        <TextBlock Text="ФИО адресата:" />
+        <TextBox x:Name="RecipientNameTextBox" Margin="0,4,0,12" />
+
+        <TextBlock Text="Тема письма:" />
+        <TextBox x:Name="SubjectTextBox" Margin="0,4,0,12" />
+
+        <TextBlock Text="Текст письма:" />
+        <TextBox x:Name="BodyTextBox"
+                 Height="120"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 Margin="0,4,0,12" />
+
+        <TextBlock Text="ФИО отправителя:" />
+        <TextBox x:Name="SenderNameTextBox" Margin="0,4,0,18" />
+
+        <Button Content="Сформировать DOCX"
+                Height="38"
+                Click="GenerateButton_Click" />
+
+        <TextBlock x:Name="StatusTextBlock"
+                   Text="Заполните поля и нажмите «Сформировать DOCX»."
+                   TextWrapping="Wrap"
+                   Margin="0,16,0,0" />
+    </StackPanel>
+</Window>
