@@ -40,3 +40,7 @@ Templates\Template.docx
 ```text
 bin\Debug\net8.0-windows\GeneratedLetter.docx
 ```
+либо
+```text
+bin\Release\net8.0-windows\GeneratedLetter.docx
+```
